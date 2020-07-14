@@ -1,14 +1,13 @@
 import React from "react";
 
+import profile from '../assets/images/profile.jpg'
+
 const Header = () => {
   return (
-    <header
-      style={{
-        background: `rebeccapurple`,
-        marginBottom: `1.45rem`,
-      }}
-    >
-      <div>hogehoge</div>
+    <header>
+      <div className="profile">
+        <img src={profile} alt="" />
+      </div>
     </header>
   );
 };
