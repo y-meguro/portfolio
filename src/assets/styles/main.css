@@ -1,3 +1,5 @@
-.header{
+@import './font-awesome.min.css';
+
+.header {
   background-color: red;
 }
