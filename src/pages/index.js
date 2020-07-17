@@ -25,12 +25,6 @@ const IndexPage = () => {
               hogehoge
             </p>
           </section>
-          <section className="container__section">
-            <h1 className="container__section-title">Links</h1>
-            <p>
-              hogehoge
-            </p>
-          </section>
         </div>
       </div>
     </Layout>
