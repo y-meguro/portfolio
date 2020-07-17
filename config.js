@@ -30,4 +30,5 @@ module.exports = {
       url: 'https://speakerdeck.com/meguro0217',
     },
   ],
+  email: 'y.meguro.2008@gmail.com',
 };

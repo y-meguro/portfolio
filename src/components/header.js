@@ -1,8 +1,9 @@
 import React from "react";
+import config from '../../config';
 import profile from '../assets/images/profile.jpg';
 import "../assets/scss/navbar.scss";
 
-const Header = ({ socialLinks = [], links = [] }) => {
+const Header = () => {
   return (
     <header className="navbar">
       <div className="navbar__inner">
@@ -11,7 +12,7 @@ const Header = ({ socialLinks = [], links = [] }) => {
           <h1 className="navbar__name">Yohei Meguro</h1>
           <h2 className="navbar__title">Software Engineer</h2>
           <ul className="navbar__social-icons">
-            {socialLinks.map(social => {
+            {config.socialLinks.map(social => {
               const { name, url, icon } = social;
               return (
                 <li key={name} className="navbar__social-icon">
@@ -27,14 +28,14 @@ const Header = ({ socialLinks = [], links = [] }) => {
           <h2 className="navbar__contact-title">CONTACT</h2>
           <ul className="navbar__contents">
             <li>
-              <div>y.meguro.2008@gmail.com</div>
+              <div>{config.email}</div>
             </li>
           </ul>
         </div>
         <div className="navbar__section">
           <h2 className="navbar__link-title">LINKS</h2>
           <ul className="navbar__contents">
-            {links.map(link => {
+            {config.links.map(link => {
               const { name, url } = link;
               return (
                 <li key={name}>
