@@ -1,6 +1,5 @@
 import React from "react";
 
-import "../assets/styles/main.css"
 import profile from '../assets/images/profile.jpg'
 
 const Header = () => {
