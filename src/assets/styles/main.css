@@ -94,3 +94,17 @@ ul {
 .page {
   color: #fff;
 }
+
+/* main */
+
+.main-wrapper {
+  margin-left: 280px;
+}
+
+.main-section section {
+  padding: 3rem;
+}
+
+.main-section section:not(:first-child) {
+  border-top: 2px solid #efefef;
+}
