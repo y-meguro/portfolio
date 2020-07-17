@@ -1,0 +1,35 @@
+@import "_color";
+
+.container {
+  color: #292929;
+  margin-left: 280px;
+
+  &__inner {
+    padding: 1rem;
+  }
+
+  &__section {
+    padding: 3rem;
+
+    &:not(:first-child) {
+      border-top: 2px solid #efefef;
+    }
+  }
+
+  &__section-title {
+    font-size: 2rem;
+    position: relative;
+    padding-left: 1.5rem;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 100%;
+      background: $primary-color;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

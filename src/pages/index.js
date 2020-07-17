@@ -1,31 +1,32 @@
 import React from "react";
 import Layout from "../components/layout";
+import "../assets/scss/container.scss"
 
 const IndexPage = () => {
   return (
     <Layout>
-      <div className="main-wrapper">
-        <div className="main-section">
-          <section>
-            <h1 className="section-title">About Me</h1>
+      <div className="container">
+        <div className="container__inner">
+          <section className="container__section">
+            <h1 className="container__section-title">About Me</h1>
             <p>
               こんにちは。ソフトウェアエンジニアをしています。
             </p>
           </section>
-          <section>
-            <h1 className="section-title">Experience</h1>
+          <section className="container__section">
+            <h1 className="container__section-title">Experience</h1>
             <p>
               hogehoge
             </p>
           </section>
-          <section>
-            <h1 className="section-title">Latest Blog Posts</h1>
+          <section className="container__section">
+            <h1 className="container__section-title">Latest Blog Posts</h1>
             <p>
               hogehoge
             </p>
           </section>
-          <section>
-            <h1 className="section-title">Links</h1>
+          <section className="container__section">
+            <h1 className="container__section-title">Links</h1>
             <p>
               hogehoge
             </p>

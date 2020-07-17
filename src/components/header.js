@@ -1,5 +1,4 @@
 import React from "react";
-
 import profile from '../assets/images/profile.jpg'
 import "../assets/scss/navbar.scss"
 
