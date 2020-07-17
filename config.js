@@ -1,4 +1,7 @@
 module.exports = {
+  author: 'Yohei Meguro',
+  job: 'Software Engineer',
+  email: 'ymegurohello@gmail.com',
   socialLinks: [
     {
       name: 'twitter',
@@ -30,5 +33,4 @@ module.exports = {
       url: 'https://speakerdeck.com/meguro0217',
     },
   ],
-  email: 'y.meguro.2008@gmail.com',
 };

@@ -9,8 +9,8 @@ const Header = () => {
       <div className="navbar__inner">
         <div className="navbar__section">
           <img className="navbar__profile" src={profile} alt="profile" />
-          <h1 className="navbar__name">Yohei Meguro</h1>
-          <h2 className="navbar__title">Software Engineer</h2>
+          <h1 className="navbar__name">{config.author}</h1>
+          <h2 className="navbar__job">{config.job}</h2>
           <ul className="navbar__social-icons">
             {config.socialLinks.map(social => {
               const { name, url, icon } = social;
