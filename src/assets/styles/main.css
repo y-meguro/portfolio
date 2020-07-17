@@ -42,11 +42,12 @@ ul {
 
 .header {
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   height: 100vh;
   width: 280px;
   background: #54B689;
+  /* background: #212121; */
   color: #fff;
 }
 
@@ -98,7 +99,12 @@ ul {
 /* main */
 
 .main-wrapper {
+  color: #292929;
   margin-left: 280px;
+}
+
+.main-section {
+  padding: 1rem;
 }
 
 .main-section section {
@@ -107,4 +113,21 @@ ul {
 
 .main-section section:not(:first-child) {
   border-top: 2px solid #efefef;
+}
+
+.section-title {
+  font-size: 2rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.section-title::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 100%;
+  background: #54B689;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
