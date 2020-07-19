@@ -2,10 +2,20 @@ module.exports = {
   globals: {
     __PATH_PREFIX__: true,
   },
-  extends: 'react-app',
+  extends: [
+    'react-app',
+    'plugin:prettier/recommended',
+  ],
   rules: {
-    "comma-dangle": ['error', 'always-multiline'],
-    indent: ['error', 2],
-    semi: ['error', 'always'],
+    "prettier/prettier": [
+      'error',
+      {
+        "printWidth": 100,
+        "trailingComma": "es5",
+        "tabWidth": 2,
+        "semi": true,
+        "singleQuote": true,
+      }
+    ]
   },
 };
