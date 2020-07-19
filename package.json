@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "lint": "eslint *.js"
+    "lint": "eslint '**/*.js'",
+    "format": "eslint --fix '**/*.js'"
   },
   "license": "0BSD",
   "dependencies": {

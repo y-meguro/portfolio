@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import config from '../../config';
 import profile from '../assets/images/profile.jpg';
-import "../assets/scss/navbar.scss";
+import '../assets/scss/navbar.scss';
 
 const Header = () => {
   return (
@@ -12,7 +12,7 @@ const Header = () => {
           <h1 className="navbar__name">{config.author}</h1>
           <h2 className="navbar__job">{config.job}</h2>
           <ul className="navbar__social-icons">
-            {config.socialLinks.map(social => {
+            {config.socialLinks.map((social) => {
               const { name, url, icon } = social;
               return (
                 <li key={name} className="navbar__social-icon">
@@ -35,7 +35,7 @@ const Header = () => {
         <div className="navbar__section">
           <h2 className="navbar__link-title">LINKS</h2>
           <ul className="navbar__contents">
-            {config.links.map(link => {
+            {config.links.map((link) => {
               const { name, url } = link;
               return (
                 <li key={name}>
