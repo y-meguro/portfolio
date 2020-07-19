@@ -1,4 +1,5 @@
 import React from 'react';
+import config from '../../config';
 import Layout from '../components/layout';
 import '../assets/scss/container.scss';
 
@@ -16,8 +17,58 @@ const IndexPage = () => {
             <p>hogehoge</p>
           </section>
           <section className="container__section">
-            <h1 className="container__section-title">Latest Blog Posts</h1>
-            <p>hogehoge</p>
+            <div className="container__section-inner">
+              <h1 className="container__section-title">Blog Posts</h1>
+              <div className="container__contents">
+                {config.blogs.map((blog) => {
+                  const { title, url, thumbnail, detail } = blog;
+                  return (
+                    <div className="container__blog-wrapper">
+                      <div className="container__blog-post">
+                        <img
+                          className="container__blog-thumbnail"
+                          src={thumbnail}
+                          alt="thumbnail"
+                        />
+                        <div className="container__blog-body">
+                          <h5 className="container__blog-title">
+                            <a
+                              href={url}
+                              className="container__blog-link"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {title}
+                            </a>
+                          </h5>
+                          <div className="container__blog-detail">{detail}</div>
+                          <div>
+                            <a
+                              href={url}
+                              className="container__more-link"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Read more →
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="container__section-footer">
+                <a
+                  href={config.blog}
+                  className="container__btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Blog
+                </a>
+              </div>
+            </div>
           </section>
         </div>
       </div>

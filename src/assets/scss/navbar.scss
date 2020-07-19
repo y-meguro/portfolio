@@ -73,29 +73,31 @@
 
   // contact
   &__contact-title {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $navbar-title-color;
+    margin-bottom: 1rem;
+
     &::before {
       margin-right: .5rem;
       font-family: FontAwesome;
       content: "\f0e0";
     }
+  }
+
+  // links
+  &__link-title {
     text-align: left;
     font-size: 1.2rem;
     font-weight: 300;
     color: $navbar-title-color;
     margin-bottom: 1rem;
-  }
 
-  // links
-  &__link-title {
     &::before {
       margin-right: .5rem;
       font-family: FontAwesome;
       content: "\f0c1";
     }
-    text-align: left;
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: $navbar-title-color;
-    margin-bottom: 1rem;
   }
 }
