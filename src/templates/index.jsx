@@ -14,13 +14,47 @@ const IndexPage = ({ pageContext }) => {
             <p>こんにちは。ソフトウェアエンジニアをしています。</p>
           </section>
           <section className="container__section">
-            <h1 className="container__section-title">Experience</h1>
-            <p>hogehoge</p>
+            <div className="container__section-inner">
+              <h1 className="container__section-title">Experience</h1>
+              <div className="container__experience-content">
+                <div className="container__experience-company">株式会社プレイド</div>
+                <div className="container__experience-info">
+                  Software Engineer | Feb 2017 – Oct 2019 | Tokyo, Japan
+                </div>
+                <ul>
+                  <li>hoge</li>
+                  <li>hoge</li>
+                  <li>hoge</li>
+                </ul>
+              </div>
+              <div className="container__experience-content">
+                <div className="container__experience-company">Yuzu Labs</div>
+                <div className="container__experience-info">
+                  Software Engineer Internship | Nov 2015 – Nov 2016 | San Francisco Bay Area
+                </div>
+                <ul>
+                  <li>Survey application for clinical studies</li>
+                  <li>Web API and Mobile application from scratch</li>
+                  <li>Call tracking function</li>
+                </ul>
+              </div>
+              <div className="container__experience-content">
+                <div className="container__experience-company">日本アイ・ビー・エム株式会社</div>
+                <div className="container__experience-info">
+                  Software Consultant | Apr 2012 – Jun 2015 | Tokyo, Japan
+                </div>
+                <ul>
+                  <li>hoge</li>
+                  <li>hoge</li>
+                  <li>hoge</li>
+                </ul>
+              </div>
+            </div>
           </section>
           <section className="container__section">
             <div className="container__section-inner">
               <h1 className="container__section-title">Blog Posts</h1>
-              <div className="container__contents">
+              <div className="container__cards">
                 {pageContext.blogs.map((blog) => {
                   const { title, description, url, image_url, published } = blog;
                   const date = moment(published).format('YYYY/M/D');
