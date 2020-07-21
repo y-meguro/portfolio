@@ -16,7 +16,7 @@ exports.createPages = async ({ actions }) => {
   });
   actions.createPage({
     path: '/',
-    component: require.resolve('./src/templates/index.js'),
+    component: require.resolve('./src/templates/index.jsx'),
     context: {
       blogs,
     },
