@@ -33,6 +33,7 @@ module.exports = {
       url: 'https://speakerdeck.com/meguro0217',
     },
   ],
+  blog: 'https://blog.ymeguro.com/',
   hatena: {
     endpoint: 'http://hatenablog.com/oembed',
     urls: [
