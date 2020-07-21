@@ -3,7 +3,7 @@ import config from '../../config';
 import Layout from '../components/layout';
 import '../assets/scss/container.scss';
 
-const IndexPage = () => {
+const IndexPage = ({ pageContext }) => {
   return (
     <Layout>
       <div className="container">
@@ -20,14 +20,14 @@ const IndexPage = () => {
             <div className="container__section-inner">
               <h1 className="container__section-title">Blog Posts</h1>
               <div className="container__contents">
-                {config.blogs.map((blog) => {
-                  const { title, url, thumbnail, detail } = blog;
+                {pageContext.blogs.map((blog) => {
+                  const { title, description, url, image_url } = blog;
                   return (
-                    <div className="container__blog-wrapper">
+                    <div className="container__blog-wrapper" key={url}>
                       <div className="container__blog-post">
                         <img
                           className="container__blog-thumbnail"
-                          src={thumbnail}
+                          src={image_url}
                           alt="thumbnail"
                         />
                         <div className="container__blog-body">
@@ -41,7 +41,7 @@ const IndexPage = () => {
                               {title}
                             </a>
                           </h5>
-                          <div className="container__blog-detail">{detail}</div>
+                          <div className="container__blog-description">{description}</div>
                           <div>
                             <a
                               href={url}
