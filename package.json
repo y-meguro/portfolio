@@ -13,8 +13,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "lint": "eslint '**/*.js'",
-    "format": "eslint --fix '**/*.js'",
+    "lint": "eslint '**/*.{js,jsx}'",
+    "format": "eslint --fix '**/*.{js,jsx}'",
     "precommit": "lint-staged"
   },
   "husky": {
@@ -23,7 +23,7 @@
     }
   },
   "lint-staged": {
-    "**/*.js": [
+    "**/*.{js,jsx}": [
       "eslint --fix",
       "git add"
     ]
