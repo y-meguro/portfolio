@@ -12,6 +12,7 @@ exports.createPages = async ({ actions }) => {
       description: res.data.description,
       url: res.data.url,
       image_url: res.data.image_url || config.hatena.defaultImage,
+      published: res.data.published,
     };
   });
   actions.createPage({

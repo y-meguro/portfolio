@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 import config from '../../config';
 import Layout from '../components/layout';
 import '../assets/scss/container.scss';
@@ -21,7 +22,8 @@ const IndexPage = ({ pageContext }) => {
               <h1 className="container__section-title">Blog Posts</h1>
               <div className="container__contents">
                 {pageContext.blogs.map((blog) => {
-                  const { title, description, url, image_url } = blog;
+                  const { title, description, url, image_url, published } = blog;
+                  const date = moment(published).format('YYYY/M/D');
                   return (
                     <div className="container__blog-wrapper" key={url}>
                       <div className="container__blog-post">
@@ -53,6 +55,7 @@ const IndexPage = ({ pageContext }) => {
                             </a>
                           </div>
                         </div>
+                        <div className="container__blog-footer">Published: {date}</div>
                       </div>
                     </div>
                   );
