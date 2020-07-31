@@ -1,4 +1,5 @@
 @import "_color";
+@import "_breakpoints";
 
 .container {
   color: #292929;
@@ -17,7 +18,21 @@
   }
 
   &__section-inner {
-    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include media-queries(sm) {
+      max-width: 540px;
+    }
+    @include media-queries(md) {
+      max-width: 720px;
+    }
+    @include media-queries(lg) {
+      max-width: 960px;
+    }
+    @include media-queries(xl) {
+      max-width: 1140px;
+    }
   }
 
   &__section-title {
@@ -68,6 +83,12 @@
     }
   }
 
+  // summary
+  &__summary {
+    line-height: 1.5;
+    overflow-wrap: break-word;
+  }
+
   // experience
   &__experience-content {
     margin-bottom: 2rem;
@@ -110,6 +131,13 @@
     width: 100%;
     height: 35%;
     object-fit: cover;
+
+    @include media-queries(sm) {
+      height: 25%;
+    }
+    @include media-queries(lg) {
+      height: 35%;
+    }
   }
 
   &__blog-body {

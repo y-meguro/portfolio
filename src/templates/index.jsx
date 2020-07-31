@@ -10,8 +10,13 @@ const IndexPage = ({ pageContext }) => {
       <div className="container">
         <div className="container__inner">
           <section className="container__section">
-            <h1 className="container__section-title">About Me</h1>
-            <p>こんにちは。ソフトウェアエンジニアをしています。</p>
+            <div className="container__section-inner">
+              <h1 className="container__section-title">About Me</h1>
+              <div className="container__summary">
+                こんにちは。ソフトウェアエンジニアをしています。
+                hogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehogehoge
+              </div>
+            </div>
           </section>
           <section className="container__section">
             <div className="container__section-inner">
