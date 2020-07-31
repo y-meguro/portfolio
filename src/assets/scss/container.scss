@@ -129,14 +129,16 @@
 
   &__blog-thumbnail {
     width: 100%;
-    height: 35%;
     object-fit: cover;
 
     @include media-queries(sm) {
       height: 25%;
     }
     @include media-queries(lg) {
-      height: 35%;
+      height: 30%;
+    }
+    @include media-queries(xl) {
+      height: 40%;
     }
   }
 
