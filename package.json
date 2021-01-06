@@ -29,7 +29,7 @@
     ]
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "gatsby": "^2.23.12",
     "gatsby-plugin-sass": "^2.3.12",
     "moment": "^2.27.0",
